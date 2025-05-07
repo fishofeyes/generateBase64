@@ -36783,9 +36783,10 @@ if(j!=null)for(n=j.gbJ(),n=n.ga0(n),i=m;n.t();){h=n.gK()
 g=j.h(0,h)
 i=A.EF(i,h,g,0)}else i=m
 f=A.fV(o,m,i)
-if(B.d.n(f,"''")||B.d.n(f,'""'))if(l){n=k.h(0,"obs")
+if(k!=null)if(B.d.n(f,"''")||B.d.n(f,'""'))if(l){n=k.h(0,"obs")
 e.push(A.fV(f,"''","'"+A.p(n)+"'"))}else{n=k.h(0,"obs")
-e.push(A.fV(f,'""','"'+A.p(n)+'"'))}else e.push(f+";//"+A.p(k.h(0,"obs")))}}else e.push(o)}return e}}
+e.push(A.fV(f,'""','"'+A.p(n)+'"'))}else e.push(f+";//"+A.p(k.h(0,"obs")))
+else e.push(f)}}else e.push(o)}return e}}
 A.Vh.prototype={
 $0(){return A.l(t.N,t.z)},
 $S:70}
