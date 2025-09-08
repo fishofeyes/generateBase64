@@ -38380,7 +38380,7 @@ k=m[1]
 j=m[r]
 q.push("    "+i.pm(A.qD(k))+'("'+j+'"), // '+l)}else{k=m[0]
 j=m[r]
-q.push("    "+i.pm(A.qD(k))+'("'+j+'"),')}}q.push(";\n    final String value;\n    const MyEnum(this.value);\n}\n    ")
+q.push("    "+i.pm(A.qD(k))+'("'+j+'"), // '+k)}}q.push(";\n    final String value;\n    const MyEnum(this.value);\n}\n    ")
 return q},
 pm(a){var s,r=a.length,q=B.j.hR(r,2),p=B.lZ.yy(r===0?3:r)
 if(p<3)p=3
