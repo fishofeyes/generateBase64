@@ -38444,6 +38444,7 @@ j=B.b.lW(g,new A.Xc())
 continue}f=g[0]
 e=A.di("\\/\\{[^}]*\\}",!0,!1,!1)
 d=A.hd(f,e,"")
+if(d.length===0||d==="\\N")d="AdHoc"
 f=g[k]
 c=A.FJ(f,"/","",0)
 f=A.qD(f)
@@ -38457,7 +38458,7 @@ f.m(a1,c,a)
 if(B.c.p(c,"/"))f.m(a1,B.b.gar(c.split("/")),a)
 if(b!==c)f.m(a1,b,a);++l}return A.P(null,r)}})
 return A.Q($async$yV,r)},
-Rg(a,b){var s,r,q,p,o,n=this.a.h(0,a),m=J.e3(n,a==="\\N"?"ADHOC":"JSON_PROPERTY"),l=A.b([],t.s)
+Rg(a,b){var s,r,q,p,o,n=this.a.h(0,a),m=J.e3(n,a==="\\N"||a==="AdHoc"?"ADHOC":"JSON_PROPERTY"),l=A.b([],t.s)
 for(n=b.length,s=J.b8(m),r=0;r<b.length;b.length===n||(0,A.E)(b),++r){q=b[r]
 p=B.c.p(q,"'")
 if(p||B.c.p(q,'"')){o=s.h(m,B.b.gV(this.xG(q)))
@@ -38465,7 +38466,7 @@ if(o==null)q+=" // \u672a\u5904\u7406"
 else q=p?A.asX(q,o):A.Xh(q,o)
 l.push(q)}else if(B.c.p(q,'":')){o=s.h(m,B.b.gV(this.xG(q)))
 l.push(o==null?q+" // \u672a\u5904\u7406":A.Xh(q,o))}else l.push(q)}return l},
-UM(a,b){var s,r,q,p,o,n=this.b.h(0,a),m=J.e3(n,a==="\\N"?"ADHOC":"JSON_PROPERTY"),l=A.b([],t.s)
+UM(a,b){var s,r,q,p,o,n=this.b.h(0,a),m=J.e3(n,a==="\\N"||a==="AdHoc"?"ADHOC":"JSON_PROPERTY"),l=A.b([],t.s)
 for(n=b.length,s=J.b8(m),r=0;r<b.length;b.length===n||(0,A.E)(b),++r){q=b[r]
 p=B.c.p(q,"'")
 if(p||B.c.p(q,'"')){o=s.h(m,B.b.gV(this.xG(q)))
