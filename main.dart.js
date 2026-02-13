@@ -39636,8 +39636,7 @@ GM(a){return this.amY(a)},
 amY(a){var s=0,r=A.R(t.H),q=this,p,o,n,m,l,k,j,i,h,g
 var $async$GM=A.S(function(b,c){if(b===1)return A.O(c,r)
 for(;;)switch(s){case 0:for(p=a.length,o=q.d,n=t.N,m=t.s,l=0,k=0;k<a.length;a.length===p||(0,A.B)(a),++k){j=A.b(a[k].split(","),m)
-if(j.length<3)continue
-i=j[1]
+i=j[j.length<3?0:1]
 h=A.cC("\\/\\{[^}]*\\}",!0,!1,!1)
 g=A.fO(i,h,"")
 if(l===0){l=B.b.ma(j,new A.Y1())
