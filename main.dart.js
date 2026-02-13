@@ -39633,15 +39633,18 @@ q.push("}\n    ")
 return q}}
 A.Y_.prototype={
 GM(a){return this.amY(a)},
-amY(a){var s=0,r=A.R(t.H),q=this,p,o,n,m,l,k,j,i,h,g
+amY(a){var s=0,r=A.R(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f
 var $async$GM=A.S(function(b,c){if(b===1)return A.O(c,r)
 for(;;)switch(s){case 0:for(p=a.length,o=q.d,n=t.N,m=t.s,l=0,k=0;k<a.length;a.length===p||(0,A.B)(a),++k){j=A.b(a[k].split(","),m)
-i=j[j.length<3?0:1]
-h=A.cC("\\/\\{[^}]*\\}",!0,!1,!1)
-g=A.fO(i,h,"")
+i=j.length
+h=i<3?0:1
+if(h+1>=i)continue
+i=j[h]
+g=A.cC("\\/\\{[^}]*\\}",!0,!1,!1)
+f=A.fO(i,g,"")
 if(l===0){l=B.b.ma(j,new A.Y1())
 if(l===-1)l=2
-continue}o.m(0,g,A.j(["obs",j[l]],n,n))}return A.P(null,r)}})
+continue}o.m(0,f,A.j(["obs",j[l]],n,n))}return A.P(null,r)}})
 return A.Q($async$GM,r)},
 ze(a){return this.amX(a)},
 amX(a2){var s=0,r=A.R(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1
